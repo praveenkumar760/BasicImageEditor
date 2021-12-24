@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BasicImageEditor</string>
+    <string name="splash_name">Image Editor</string>
+    <string name="home_title">What would you like to create?</string>
+    <string name="save">SAVE</string>
+    <string name="crop">CROP</string>
+    <string name="flip_x">Flip Vertical</string>
+    <string name="flip_y">Flip Horizontal</string>
+    <string name="success">Photo Saved Successfully</string>
+    <string name="resolution">RESOLUTION :</string>
+    <string name="orientation">ORIENTATION</string>
+    <string name="future_implementation">Future Implementation</string>
+    <string-array name="home_button_list">
+        <item>Open Gallery</item>
+        <item>Crop Photo</item>
+        <item>Exif Info</item>
+        <item>Apply Effects</item>
+        <item>Make a Collage</item>
+        <item>Change Background</item>
+    </string-array>
+</resources>

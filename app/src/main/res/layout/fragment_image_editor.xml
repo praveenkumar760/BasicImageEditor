@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/margin_four"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="bold"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_flip"
+            android:layout_below="@+id/tv_save"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin_image"
+            android:adjustViewBounds="true" />
+
+        <LinearLayout
+            android:id="@+id/ll_flip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_crop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_four"
+                android:layout_weight="1"
+                android:text="@string/crop"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_flip_x"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_four"
+                android:layout_weight="1"
+                android:text="@string/flip_x"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_flip_y"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_four"
+                android:layout_weight="1"
+                android:text="@string/flip_y"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>
